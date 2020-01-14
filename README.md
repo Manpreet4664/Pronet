@@ -4,28 +4,11 @@ Deployment link: https://pronet.azurewebsites.net/
 ProNet is a [Sails v1](https://sailsjs.com) application. Hosted using Microsoft Azure's App Service and configured with a Docker Container. The web app has been developed using Sails.js MVC framework with Bootstrap.
 
 ### Team Members
-1. Abhinandan Walia - B00820613
-2. Jay Sharma - B00824331
-3. Manpreet Singh - B00821998
-4. Aishwarya Narayanan - B00820313)
-5. Vishaali Srikanth - B00821049
-
-### Updating Docker container
-Clone the project via HTTPS from https://git.cs.dal.ca/jays/pronet.git 
-```> cd pronet```
-```> docker login```
-```> docker build -t jaysharma95/pronet .```
-```> docker run -it --rm -p 1337:1337 jaysharma95/pronet```
-```> docker push jaysharma95/pronet```
-Azure has an App Service named ‘pronet’ which must now be stopped and started again for the deployment to take effect. The app service is linked to DockerHub’s repository and shall update automatically.
-
-### Accessing MySQL for Azure
-Open MySQL Workbench on your computer and configure a new connection as:
-Server/Host name: ```dal-fcs.mysql.database.azure.com```
-Server admin login name: ```jays@dal-fcs```
-Password: ```Test1234```
-Port number: ```3306```
-Schema: ```pronet ```
+1. Abhinandan Walia
+2. Jay Sharma
+3. Manpreet Singh
+4. Aishwarya Narayanan
+5. Vishaali Srikanth
 
 ### Prototype Description
 1. The prototype is up and running on url 'https://pronet.azurewebsites.net/'.
@@ -41,7 +24,7 @@ Schema: ```pronet ```
    and makes the application loosely coupled, that will make it easy for future releases.
 2. The code has been documented properly by using the proper naming conventions and providing the appropriate inline comments for the
    future development.Therefore, no additional documentation required for the code explanation.
-3. The git commits have been done with useful messages so that all the actvities can be tracked efficiently in case of any problem in future.
+3. The git commits have been done with useful messages so that all the actvities can be tracked efficiently in case of any problem in           future.
 4. The Sails Framework has been followed throughout the development which made the development process easier for the developers.
 
 ### User Experience
@@ -53,8 +36,7 @@ Schema: ```pronet ```
 ### Scalability
 The app is highly scalable as we have used Microsoft Azure cloud service for the application deployment.The load balancing can be easily
 achieved using Azure which makes the processing capability of the APIs faster.To balance the load, the mutiple Virtual Machines can be 
-created in case of heavy number of requests to the aplication and based on the network tarffic the VMS will be configured.The application
-is independent of any platform and can be easily migrated to any of the required platforms with minor changes if required in future.
+created in case of heavy number of requests to the aplication and based on the network tarffic the VMS will be configured.The application is independent of any platform and can be easily migrated to any of the required platforms with minor changes if required in future.
 
 ### Security
 The application has been deployed on a secure connection in order to ensure the privacy and security of the users.
